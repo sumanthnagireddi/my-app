@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+
+  openMenu:boolean=false
   downloadPdf(): void {
     const pdfUrl = '/assets/sumanth_resume.pdf'; // Update with the actual path
     this.downloadFile(pdfUrl, 'sumanth_resume.pdf');
@@ -15,5 +17,8 @@ export class HeaderComponent {
     link.href = fileUrl;
     link.download = fileName;
     link.click();
+  }
+  toggleMenu(){
+    this.openMenu=!this.openMenu
   }
 }
