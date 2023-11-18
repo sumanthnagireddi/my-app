@@ -1,6 +1,6 @@
 [build]
 command = "ng build"
-publish = "dist/your-angular-app"
+publish = "dist/my-app"
 
 [[redirects]]
   from = "/*"
