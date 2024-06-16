@@ -12,9 +12,9 @@ export class AppComponent {
     
   }
   ngOnInit(){
-    this.http.get('https://jsonplaceholder.typicode.com/users').subscribe((data:any)=>{
-      console.log(data);
-      this.title=data[0].name
-    })
+    // this.http.get('https://jsonplaceholder.typicode.com/users').subscribe((data:any)=>{
+    //   console.log(data);
+    //   this.title=data[0].name
+    // })
   }
 }
